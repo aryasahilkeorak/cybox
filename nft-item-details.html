@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- site favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- bootstrap 5 and all custom css files -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font-awesome 6 cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <title>NFT DETAILS</title>
+</head>
+
+<body>
+    <!-- Header start -->
+    <header>
+        <!-- navbar for xl> screens -->
+        <nav class="navbar navbar-fixed navbar-expand-xl navbar-light position-fixed w-100  start-0 end-0 py-3 d-none d-xl-block"
+            data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.php"><img src="./assets/images/brand-logo.png" alt="header-logo"
+                        class="img-fluid" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item  mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./index.php">Home 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="./index-2.php">Home 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="./index-3.php">Home 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">About</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./about.php">About 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about-2.php">About 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="./our-team.php">our team</a>
+                                    </li>
+                                    <li>
+                                        <a href="./coming-soon.php">coming soon</a>
+                                    </li>
+                                    <li>
+                                        <a href="./community.php">community</a>
+                                    </li>
+                                    <li>
+                                        <a href="./faq.php">faq</a>
+                                    </li>
+                                    <li>
+                                        <a href="./error-404.php">error 404</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">Road map</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./roadmap.php">Road map 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="./coming-soon.php">Road map 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">nft</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./nft-item.php">nft item</a>
+                                    </li>
+                                    <li>
+                                        <a href="./nft-item-details.php">nft item details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">Blog</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./blog.php">Blog Grid</a>
+                                    </li>
+                                    <li>
+                                        <a href="./blog-detail.php">Blog details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./contact.php">Contact</a>
+                        </li>
+                </div>
+
+
+
+                <a href="#" class="secondary-btn-effect btn-effect d-none d-xl-block" data-bs-toggle="modal"
+                    data-bs-target="#gridSystemModal">
+                    <span class="border-fade"></span>
+                    <span class="effect text-white fw-bold ff-chakra">Join discord</span>
+                </a>
+
+            </div>
+        </nav>
+
+        <!-- navbar for xl< screens -->
+        <nav class="navbar-mobile position-fixed w-100  start-0 end-0 py-3 navbar-fixed-2 d-block d-xl-none">
+            <div class="container-fluid">
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <img src="./assets/images/brand-logo.png" alt="">
+                    </div>
+
+                    <div>
+                        <a href="#" class="secondary-btn-effect btn-effect " data-bs-toggle="modal"
+                            data-bs-target="#gridSystemModal">
+                            <span class="border-fade"></span>
+                            <span class="effect text-white fw-bold ff-chakra">Join</span>
+                        </a>
+
+                        <span style="font-size:30px; cursor:pointer; color: #fff;" onclick="openNav()">&#9776;</span>
+
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Home
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./index.php">Home 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./index-2.php">Home 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./index-3.php">Home 3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            About
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./about.php">About 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./about-2.php">About 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./our-team.php">our team</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./coming-soon.php">coming soon</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./community.php">community</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./faq.php">faq</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./error-404.php">error 404</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Road Map
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./roadmap.php">Road map 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./coming-soon.php">Road map 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            NFT
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./nft-item.php">nft item</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./nft-item-details.php">nft item details</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            Blog
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./blog.php">Blog Grid</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./blog-detail.php">Blog details</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button onclick="window.location.href = './contact.php';"
+                                            class="accordion-button collapsed" type="button">
+                                            Contact
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- nft items heading section start -->
+    <section class="about-heading bg-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h1 class="fs-80 text-white fw-bold ff-chakra text-uppercase">ITEM DETAILS</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nft items heading section end -->
+
+    <!-- nft item detail main section -->
+    <section class="nft-item-details-sec py-large">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="pe-lg-3">
+                        <img src="./assets/images/stage-slider-images/item-details.jpg" alt="img7.jpg"
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <h2 class="text-white fs-2 ff-chakra fw-bold">Samuel Olukoju</h2>
+                        <p class="text-white">Cybox <span class="text-white">#01</span></p>
+
+                        <div class="share-view-etc-options mb-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span>
+                                        <i class="fa-solid fa-eye"></i>
+                                        2255
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                        1436
+                                    </span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <button>
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="fs-5">Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget.
+                            Facilisi lobortis morbi fringilla urna amet sed ipsum vitae ipsum malesuada. Habitant
+                            sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget. Facilisi lobortisal
+                            morbi
+                            fringilla urna amet sed ipsum</p>
+
+                        <a href="" class="secondary-btn-effect btn-effect mb-4 w-100 text-center">
+                            <span class="border-fade"></span>
+                            <span class="effect text-white fw-bold ff-chakra"><i
+                                    class="fa-solid fa-bag-shopping text-white"></i> &nbsp; buy on opensea</span>
+                        </a>
+
+                        <div class="list-product">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="box corner-box">
+                                        <p>Clothing</p>
+                                        <h6 class="h-6">Blank</h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="box corner-box">
+                                        <p>Headwear</p>
+                                        <h6 class="h-6">Black Cap</h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="box corner-box">
+                                        <p>Eyewear</p>
+                                        <h6 class="h-6">Blank</h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="box corner-box">
+                                        <p>Face</p>
+                                        <h6 class="h-6">One Eye</h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="box corner-box">
+                                        <p>Food</p>
+                                        <h6 class="h-6">Potato Chip</h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="box corner-box">
+                                        <p>Background</p>
+                                        <h6 class="h-6">Galaxy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nft item detail main end -->
+
+    <!-- stage slider section start -->
+    <section class="index-stage-slider pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h3 class="section-sub-heading text-secondary">NFT</h3>
+                        <h2 class="section-heading text-white mb-5">ARTS & COLLECTIBLES</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid g-0">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme mb-2">
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img1.jpg" alt="img1.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Dose of Art</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img2.jpg" alt="img2.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">To The Moon</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img3.jpg" alt="img3.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Artful
+                                    Antlers</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img4.jpg" alt="img4.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Butterfly
+                                    Dust</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img5.jpg" alt="img5.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">
+                                    Dragons</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img6.jpg" alt="img6.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Crypto
+                                    Diamonds</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img7.jpg" alt="img7.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Nova
+                                    Auroras</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img1.jpg" alt="img1.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Dose of Art</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img2.jpg" alt="img2.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">To The Moon</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img3.jpg" alt="img3.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Artful
+                                    Antlers</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img4.jpg" alt="img4.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Butterfly
+                                    Dust</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img5.jpg" alt="img5.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">
+                                    Dragons</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- stage slider section end -->
+
+    <!-- footer start -->
+    <footer class="footer bg-info position-relative">
+        <!-- vector elements -->
+        <div class="container">
+            <img src="./assets/images/elements/footer-element-1.png" alt="footer-element-1.png"
+                class="img-fluid position-absolute footer-element-1 top-0 d-none d-xl-block">
+            <img src="./assets/images/elements/footer-element-2.png" alt="footer-element-1.png"
+                class="img-fluid position-absolute footer-element-2 d-none d-xl-block">
+        </div>
+
+        <!-- main footer start -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- social icons and text -->
+                    <div class="col-12">
+                        <!-- social icons -->
+                        <div class="footer-social-m-icons d-flex justify-content-center mb-4">
+                            <ul class="list-unstyled d-flex">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!-- text -->
+                        <div class="text-center">
+                            <h2 class="text-white mb-4 ff-chakra fw-bold">Don’t Miss Out, Join Now For Early Access</h2>
+                            <p class="mb-5">Maecenas Sit Pretium, Cras In. In Quisque Sem Id Eget. In Vel Gravida Ut</p>
+                        </div>
+
+                    </div>
+
+                    <!-- footer subscribe us form start -->
+                    <div class="col-lg-7 col-xl-6 col-md-8">
+                        <form action="#" class="d-flex justify-content-center footer-subscription-form">
+                            <input type="email" name="#" id="#" placeholder="Enter Your Email Here...."
+                                class="form-control me-0 me-md-4 mb-4 mb-md-0" required>
+                            <button type="submit" class="secondary-btn-effect btn-effect">
+                                <span class="border-fade"></span>
+                                <span class="effect text-white fw-bold ff-chakra">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- footer copyright and other items nav start-->
+        <div class="footer-nav pt-3">
+            <div class="container">
+                <div class="footer-navbar">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 text-center text-lg-start">
+                            <a href="#" class="text-default">CYBOX 2022 - ALL Rights Reserved</a>
+                        </div>
+                        <div class="col-lg-7">
+                            <ul
+                                class="list-unstyled d-md-flex justify-content-lg-end justify-content-center text-center text-lg-start">
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Privacy Policy</a>
+                                </li>
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Cookies</a>
+                                </li>
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Terms & Conditions</a>
+                                </li>
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- all script files and cdns -->
+    <!-- bootstrap script files -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- aos animation script file -->
+    <script src="./node_modules/aos/src/js/aos.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- jQuery and cdn for navbar on scroll bg change -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/navbar-onscroll.js"></script>
+
+    <!-- slick carousel cdn -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- slick all scripts -->
+    <script src="./vendors/slick/slick/slick.min.js"></script>
+    <script src="./assets/js/slick-slider.js"></script>
+
+
+    <!-- owl carousel script  -->
+    <script src="./vendors/owlcarousel/src/js/owl.carousel.js"></script>
+    <script src="./vendors/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="./vendors/owlcarousel/owl-jquery/owl-jquery.js"></script>
+
+    <!-- countdown timing script -->
+    <script src="./assets/js/countdown-script.js"></script>
+
+    <!-- sidenav script -->
+    <script src="./assets/js/sidenav.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.lazy').slick({});
+        });
+    </script>
+
+</body>
+
+</html>

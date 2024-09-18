@@ -1,0 +1,44 @@
+// scss-docs-start theme-color-variables
+$primary   :  #0c1226 !default;
+$secondary :  #14C2A3!default;
+$white     :  #FFFFFF !default;
+$info      :  #141a31 !default; 
+$green     :  #0e2230 !default;
+
+// gray colors variables
+$gray-500  :  #B9B9BF !default;
+$gray-600  :  #939393 !default;
+$gray-700  :  #565660 !default;
+
+// other colors variables
+
+// scss-docs-start gray-color-variables
+
+// $gray-100: #f8f9fa  !default;
+// $gray-200: #e9ecef !default;
+// $gray-300: #dee2e6 !default;
+// $gray-400: #ced4da !default;
+
+// $gray-600: #6c757d !default;
+// $gray-800: #343a40 !default;
+// $gray-900: #212529 !default;
+
+// scss-docs-end gray-color-variables
+
+
+// scss-docs-start theme-font-families
+$ff-primary: "IBM Plex Mono", monospace;
+$ff-chakra : 'Chakra Petch', 'sans-serif';
+
+// scss-docs-start theme-font-sizes
+$fs-small   :  1rem;
+$fs-medium  :  3rem;
+$fs-large   :  6rem;
+
+// css-docs-start rest-of-theme-font-weights
+$fw-500 : 500;
+$fw-800 : 800;
+
+
+
+

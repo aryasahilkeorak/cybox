@@ -1,0 +1,223 @@
+.blog-hero-banner {
+    min-height: calc(100vh - 98px);
+    margin-top: 98px;
+    @include background-props (url(../../assets/images/index/hero-banner-2.jpg));
+}
+
+.blog-main-sec {
+    
+    article {
+        p {
+            font-size: calc($fs-small + 3px);
+        }
+
+        .image-label {
+            top: 15px;
+            left: 10px;
+            font-size: calc($fs-small - 3px);
+        }
+    }
+
+    .tags-and-share-row {
+        padding: 15px 0;
+
+        a,
+        i {
+            color: $gray-500;
+            transition: all 0.3s linear;
+
+            &:hover {
+                color: $secondary;
+            }
+
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .blog-pagination {
+        .after {
+            @include media-breakpoint-up(lg) {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 15%;
+                    right: 0;
+                    height: 70%;
+                    width: 1px;
+                    background-color: rgba($color: $white, $alpha: 0.2);
+                }
+            }
+        }
+
+        button {
+            background: none;
+            border: 0;
+            outline: 0;
+            margin-bottom: 10px;
+            font-size: calc($fs-small - 2px);
+            font-weight: bold;
+            font-family: $ff-chakra;
+            transition: all 0.3s linear;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+
+        p {
+            color: $white;
+            transition: all 0.3s linear;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+
+    }
+
+    .blog-accordions {
+        .accordion-item {
+            background: transparent !important;
+
+            .accordion-header {
+                border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
+                position: relative;
+
+                &::after {
+                    content: "";
+                    bottom: -1px;
+                    height: 2px;
+                    width: 40%;
+                    left: 0;
+                    position: absolute;
+                    background-color: $secondary;
+                }
+
+                .accordion-button {
+                    color: $white;
+                    font-family: $ff-chakra;
+                    font-weight: bold;
+                    font-size: calc($fs-small + 8px);
+
+                    &::after {
+                        background-image: url(../../assets/images/white-arrow.svg);
+                    }
+                }
+            }
+
+            .accordion-body {
+                .categories {
+                    li {
+                        margin: 10px 0;
+
+                        a {
+                            color: $white;
+                            font-size: calc($fs-small + 1px);
+                        }
+                    }
+                }
+
+                .recent-posts {
+                    .post-box {
+                        .image {
+                            height: 100px;
+                            width: 100px;
+                            margin-right: 15px;
+
+                            img {
+                                height: 100px;
+                                width: 100px;
+                            }
+                        }
+
+                        .text {
+                            h6 {
+                                margin-bottom: 0;
+
+                                a {
+                                    font-size: calc($fs-small - 2px);
+                                    line-height: 14px;
+                                }
+                            }
+
+                            p {
+                                font-size: calc($fs-small - 6px);
+                                margin-bottom: 0;
+
+                                a {
+                                    color: $white;
+                                    font-size: calc($fs-small - 6px);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tags {
+                    a {
+                        padding: 5px 8px;
+                        background: rgba($color: $secondary, $alpha: 0.5);
+                        margin-bottom: 10px;
+                        display: inline-block;
+                        color: $white;
+                        font-size: calc($fs-small - 2px);
+                        font-weight: bold;
+
+                        &:hover {
+                            background: $secondary;
+                            color: $white  !important;
+                        }
+                    }
+                }
+            }
+
+            &:not(:first-of-type) {
+                border-top: 0;
+            }
+        }
+    }
+
+    .blog-pagination-sec {
+        margin-top: 40px;
+
+        .pagination {
+            .page-item {
+                margin-right: 20px;
+
+                &:last-of-type{
+                    margin-right: 0px;
+                }
+
+                &.active {
+                    .page-link {
+                        background: $secondary  !important;
+                    }
+                }
+
+                .page-link {
+                    padding: 0;
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: transparent;
+                    border: 2px solid rgba($color: $white, $alpha: 0.2);
+                    border-radius: 0;
+                    color: $white;
+                    font-weight: bold;
+                    font-family: $ff-chakra;
+
+                    &:hover {
+                        background: $secondary  !important;
+                        color: $white  !important;
+                    }
+                }
+            }
+        }
+    }
+}

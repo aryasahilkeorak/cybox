@@ -1,0 +1,168 @@
+.navbar {
+    z-index: 99999;
+
+    .navbar-nav {
+        .nav-item {
+            position: relative;
+
+            .nav-link {
+                color: $white;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 700;
+                text-transform: uppercase;
+                position: relative;
+                display: block;
+                color: $white;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+
+            .nav-dropdown {
+                visibility: hidden;
+                background-color: $green;
+                padding: 10px;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                min-width: 200px;
+                border: 1px solid $secondary;
+                transition: all 0.2s ease-out;
+                border-radius: 2px;
+                z-index: 9999;
+                opacity: 0;
+                transition: all 0.3s ease;
+                transform: translateY(15px);
+
+                li {
+                    a {
+                        text-transform: uppercase;
+                        visibility: hidden;
+                        color: $white;
+                        font-size: calc($fs-small - 2px);
+                        font-weight: 500;
+                        transition: all 0.3s linear;
+
+                        &:hover {
+                            color: rgba($color: $secondary, $alpha: 0.8);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .nav-dropdown {
+                    visibility: visible;
+                    top: 60px;
+                    opacity: 1;
+                    transform: translateY(0px);
+
+                    li {
+                        a {
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.navbar-mobile {
+    z-index: 99999;
+
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: $white;
+        overflow-x: hidden;
+        transition: all 0.5s ease;
+        padding-top: 60px;
+
+        a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: $black;
+            display: block;
+            transition: 0.3s;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .accordion {
+            .accordion-item {
+                border-radius: 0;
+                border-left: 0;
+                border-right: 0;
+
+                .accordion-header {
+                    .accordion-button {
+                        border-radius: 0;
+                        &:focus {
+                            border-color: none;
+                            box-shadow: none;
+                        }
+
+                        &:not(.collapsed){
+                            color: $secondary;
+                        }
+                    }
+                }
+                .accordion-body{
+                    padding: 0;
+                    ul{
+                        margin-bottom: 0;
+                        li{
+                            border-bottom: 1px solid rgba($color: $black, $alpha: 0.2);
+                            a{
+                                font-size: calc($fs-small);
+                                text-transform: capitalize;
+                            }
+                            &:last-of-type{
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                &:last-of-type{
+                    .accordion-button{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+
+}

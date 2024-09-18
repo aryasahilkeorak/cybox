@@ -1,0 +1,100 @@
+// font sizes
+.fs-10{
+    font-size: calc($fs-small - 6px);
+    line-height: 15px;
+}
+.fs-56 {
+    font-size: calc($fs-medium + 0.5rem);
+
+    @include media-breakpoint-down(sm) {
+        font-size: calc($fs-medium - 1rem);
+    }
+}
+
+.fs-64 {
+    font-size: calc($fs-medium + 1rem);
+
+    @include media-breakpoint-down(md) {
+        font-size: calc($fs-medium + 0.2rem);
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: calc($fs-medium + 0.5rem);
+    }
+}
+
+.fs-80 {
+    font-size: calc($fs-large - 1rem);
+
+    @include media-breakpoint-down(xl) {
+        font-size: calc($fs-large - 3rem);
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: calc($fs-large - 3.5rem);
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: calc($fs-large - 2rem);
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: calc($fs-large - 3.5rem);
+    }
+}
+
+.fs-300 {
+    font-size: calc(20rem - 20px);
+
+    @include media-breakpoint-down(md) {
+        font-size: 15rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 9rem;
+    }
+}
+
+// headings
+.section-heading,
+.section-sub-heading {
+    font-family: $ff-chakra;
+    font-weight: $font-weight-bold;
+}
+
+.section-heading {
+    font-size: $fs-small*2.5;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $fs-small*2;
+    }
+}
+
+.section-sub-heading {
+    font-size: $fs-small*1.25;
+}
+
+// font families
+.ff-chakra {
+    font-family: $ff-chakra;
+}
+
+// font weights
+.fw-500 {
+    font-weight: 500;
+}
+
+// paragraphs
+.text-default {
+    color: $gray-500;
+    font-family: $ff-primary;
+}
+
+// text colors classes
+.text-gray-500 {
+    color: $gray-500;
+}
+
+.text-gray-600 {
+    color: $gray-600;
+}

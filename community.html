@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- site favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- bootstrap 5 and all custom css files -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font-awesome 6 cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <title>COMMUNITY</title>
+</head>
+
+<body>
+    <!-- Header start -->
+    <header>
+        <!-- navbar for xl> screens -->
+        <nav class="navbar navbar-fixed navbar-expand-xl navbar-light position-fixed w-100  start-0 end-0 py-3 d-none d-xl-block"
+            data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.php"><img src="./assets/images/brand-logo.png" alt="header-logo"
+                        class="img-fluid" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item  mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./index.php">Home 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="./index-2.php">Home 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="./index-3.php">Home 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">About</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./about.php">About 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about-2.php">About 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="./our-team.php">our team</a>
+                                    </li>
+                                    <li>
+                                        <a href="./coming-soon.php">coming soon</a>
+                                    </li>
+                                    <li>
+                                        <a href="./community.php">community</a>
+                                    </li>
+                                    <li>
+                                        <a href="./faq.php">faq</a>
+                                    </li>
+                                    <li>
+                                        <a href="./error-404.php">error 404</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">Road map</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./roadmap.php">Road map 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="./coming-soon.php">Road map 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">nft</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./nft-item.php">nft item</a>
+                                    </li>
+                                    <li>
+                                        <a href="./nft-item-details.php">nft item details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">Blog</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./blog.php">Blog Grid</a>
+                                    </li>
+                                    <li>
+                                        <a href="./blog-detail.php">Blog details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./contact.php">Contact</a>
+                        </li>
+                </div>
+
+
+
+                <a href="#" class="secondary-btn-effect btn-effect d-none d-xl-block" data-bs-toggle="modal"
+                    data-bs-target="#gridSystemModal">
+                    <span class="border-fade"></span>
+                    <span class="effect text-white fw-bold ff-chakra">Join discord</span>
+                </a>
+
+            </div>
+        </nav>
+
+        <!-- navbar for xl< screens -->
+        <nav class="navbar-mobile position-fixed w-100  start-0 end-0 py-3 navbar-fixed-2 d-block d-xl-none">
+            <div class="container-fluid">
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <img src="./assets/images/brand-logo.png" alt="">
+                    </div>
+
+                    <div>
+                        <a href="#" class="secondary-btn-effect btn-effect " data-bs-toggle="modal"
+                            data-bs-target="#gridSystemModal">
+                            <span class="border-fade"></span>
+                            <span class="effect text-white fw-bold ff-chakra">Join</span>
+                        </a>
+
+                        <span style="font-size:30px; cursor:pointer; color: #fff;" onclick="openNav()">&#9776;</span>
+
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Home
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./index.php">Home 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./index-2.php">Home 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./index-3.php">Home 3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            About
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./about.php">About 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./about-2.php">About 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./our-team.php">our team</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./coming-soon.php">coming soon</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./community.php">community</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./faq.php">faq</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./error-404.php">error 404</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Road Map
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./roadmap.php">Road map 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./coming-soon.php">Road map 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            NFT
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./nft-item.php">nft item</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./nft-item-details.php">nft item details</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            Blog
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./blog.php">Blog Grid</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./blog-detail.php">Blog details</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button onclick="window.location.href = './contact.php';"
+                                            class="accordion-button collapsed" type="button">
+                                            Contact
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- community heading section start -->
+    <section class="about-heading bg-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h1 class="fs-80 text-white fw-bold ff-chakra">COMMUNITY</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- community heading section end -->
+
+    <!-- what is cybox section start -->
+    <section class="about-about-us-main py-large community-nft-collections">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center">
+                        <h2 class="fs-80 text-white fw-bold ff-chakra mb-4 mb-lg-5">CYBOX NFT COLLECTIONS FOR EVERYONE
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- what is nft video  -->
+                <div class="col-lg-10">
+                    <div class="mb-5 position-relative">
+                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/Av1wxCEaEcs"
+                            title="What is Non Fungible Token? Difference in Cryptocurrency and NFT explained | Economy & Finance UPSC"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- what is nft text data -->
+                <div class="what-is-nft mt-5">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5">
+                            <div class="mb-4">
+                                <h6 class="section-sub-heading text-secondary">ABOUT US</h6>
+                                <h3 class="section-heading text-white">WHAT IS CYBOX?</h3>
+                                <p>Maecenas sit pretium, cras in. In quisque sem id eget. In vel gravida ut adipiscing
+                                    integer
+                                    felis. Id ac non arcu facilisi proin ultrices sed. Id accumsan quam viverra ante in
+                                    id
+                                    integer ut. Volutpat lobortis dolor etiam dis interdum tincidunt senectus.</p>
+
+                                <div>
+                                    <ul
+                                        class="social d-flex justify-content-center justify-content-lg-start list-unstyled mt-3 mt-md-4 mt-lg-5 pt-2">
+                                        <li class="corner-box">
+                                            <a href="#">
+                                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M24.1925 4.24068C25.3353 3.52578 26.1904 2.40008 26.5981 1.07376C25.5242 1.7405 24.3494 2.21017 23.1242 2.46246C21.4256 0.58222 18.7344 0.124655 16.5543 1.34544C14.3742 2.56622 13.245 5.16313 13.7976 7.68507C9.399 7.45399 5.30092 5.27976 2.52313 1.70341C1.07346 4.31995 1.81427 7.66477 4.21609 9.34724C3.34757 9.31802 2.4983 9.07195 1.73912 8.62955C1.73912 8.65356 1.73912 8.67757 1.73912 8.70158C1.73962 11.4272 3.57533 13.7749 6.12832 14.3151C5.32271 14.5444 4.47769 14.5782 3.65772 14.4138C4.3757 16.7446 6.4286 18.3415 8.76847 18.3891C6.83053 19.9807 4.43724 20.8439 1.97368 20.8397C1.53702 20.8403 1.1007 20.814 0.666992 20.761C3.16868 22.4432 6.08035 23.3361 9.05403 23.3329C13.1911 23.3626 17.167 21.6559 20.0923 18.5946C23.0177 15.5332 24.6483 11.3726 24.6196 7.04342C24.6196 6.7953 24.614 6.54851 24.603 6.30305C25.6744 5.49278 26.5991 4.48901 27.3337 3.3389C26.3355 3.80188 25.2767 4.10585 24.1925 4.24068Z"
+                                                        fill="white"></path>
+                                                </svg>
+
+                                            </a>
+                                        </li>
+
+                                        <li class="corner-box">
+                                            <a href="#">
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 15.9779C0.00184798 23.8392 5.68335 30.5327 13.3999 31.7647V20.5962H9.37059V15.9779H13.4047V12.4623C13.2244 10.7964 13.7899 9.13619 14.9479 7.93183C16.1059 6.72747 17.7364 6.10383 19.3971 6.23005C20.5891 6.24942 21.7782 6.35624 22.9548 6.54966V10.4792H20.9472C20.2561 10.3881 19.5613 10.6178 19.0585 11.1035C18.5557 11.5892 18.2993 12.2783 18.3616 12.9769V15.9779H22.7626L22.059 20.5978H18.3616V31.7647C26.7069 30.4377 32.559 22.7691 31.6782 14.3145C30.7974 5.8599 23.4921 -0.420988 15.0546 0.0220602C6.61716 0.465108 0.00134123 7.477 0 15.9779Z"
+                                                        fill="white"></path>
+                                                </svg>
+
+                                            </a>
+                                        </li>
+
+                                        <li class="corner-box">
+                                            <a href="#">
+                                                <svg width="36" height="33" viewBox="0 0 36 33" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M35.3202 0.445405C34.7061 -0.0697563 33.7416 -0.143466 32.7443 0.252625H32.7427C31.6938 0.668966 3.05306 12.8222 1.88712 13.3188C1.67506 13.3917 -0.177012 14.0753 0.0137627 15.5981C0.184068 16.9711 1.6726 17.5397 1.85437 17.6053L9.13574 20.0718C9.61882 21.6626 11.3997 27.5319 11.7935 28.7858C12.0391 29.5674 12.4395 30.5945 13.1412 30.8059C13.7569 31.0408 14.3694 30.8262 14.7656 30.5184L19.2173 26.4335L26.4037 31.978L26.5748 32.0792C27.0628 32.2931 27.5304 32.4 27.9766 32.4C28.3213 32.4 28.6521 32.336 28.9681 32.208C30.0448 31.7706 30.4755 30.7557 30.5205 30.6407L35.8884 3.03822C36.2159 1.56402 35.7607 0.813956 35.3202 0.445405ZM15.5574 21.0583L13.1011 27.5384L10.6447 19.4383L29.4766 5.6683L15.5574 21.0583Z"
+                                                        fill="white"></path>
+                                                </svg>
+
+                                            </a>
+                                        </li>
+
+                                        <li class="corner-box">
+                                            <a href="#">
+                                                <svg width="36" height="27" viewBox="0 0 36 27" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M31.0109 2.95086C27.8957 0.444067 22.9677 0.0191346 22.7568 0.0038487C22.4297 -0.0236647 22.1179 0.15976 21.9834 0.462409C21.9711 0.480751 21.8641 0.728374 21.7449 1.11356C23.8054 1.46207 26.3366 2.16214 28.6264 3.58367C28.9932 3.8099 29.1063 4.29291 28.8801 4.65976C28.7303 4.90127 28.4766 5.03272 28.2137 5.03272C28.073 5.03272 27.9293 4.99298 27.801 4.9135C23.8635 2.4709 18.9477 2.34862 18 2.34862C17.0523 2.34862 12.1335 2.4709 8.19905 4.9135C7.8322 5.14278 7.34918 5.02966 7.12296 4.66282C6.89368 4.29291 7.00679 3.81295 7.37364 3.58367C9.66338 2.16519 12.1946 1.46207 14.2551 1.11662C14.1359 0.728374 14.0289 0.483809 14.0197 0.462409C13.8821 0.15976 13.5734 -0.0297784 13.2432 0.0038487C13.0323 0.0191346 8.10428 0.444066 4.94633 2.98449C3.29857 4.50996 0 13.4244 0 21.1312C0 21.2688 0.0366848 21.4002 0.103941 21.5195C2.3784 25.5181 8.5873 26.5636 10.0027 26.6095C10.0088 26.6095 10.018 26.6095 10.0272 26.6095C10.2779 26.6095 10.5132 26.4903 10.66 26.2885L12.0907 24.3197C8.22962 23.3231 6.25781 21.6295 6.1447 21.5286C5.82065 21.2443 5.79008 20.7491 6.07745 20.425C6.36175 20.101 6.857 20.0704 7.18105 20.3547C7.2269 20.3975 10.8587 23.4791 18 23.4791C25.1535 23.4791 28.7853 20.3853 28.822 20.3547C29.1461 20.0735 29.6382 20.101 29.9256 20.4281C30.2099 20.7522 30.1793 21.2443 29.8553 21.5286C29.7422 21.6295 27.7704 23.3231 23.9093 24.3197L25.34 26.2885C25.4868 26.4903 25.7221 26.6095 25.9728 26.6095C25.982 26.6095 25.9912 26.6095 25.9973 26.6095C27.4127 26.5636 33.6216 25.5181 35.8961 21.5195C35.9633 21.4002 36 21.2688 36 21.1312C36 13.4244 32.7014 4.50996 31.0109 2.95086ZM12.913 18.0008C11.3998 18.0008 10.1739 16.6007 10.1739 14.8704C10.1739 13.1401 11.3998 11.7399 12.913 11.7399C14.4263 11.7399 15.6522 13.1401 15.6522 14.8704C15.6522 16.6007 14.4263 18.0008 12.913 18.0008ZM23.087 18.0008C21.5737 18.0008 20.3478 16.6007 20.3478 14.8704C20.3478 13.1401 21.5737 11.7399 23.087 11.7399C24.6002 11.7399 25.8261 13.1401 25.8261 14.8704C25.8261 16.6007 24.6002 18.0008 23.087 18.0008Z"
+                                                        fill="white"></path>
+                                                </svg>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="cybox-info corner-box active mb-4">
+                                <h3 class="text-white ff-chakra fw-bold mb-3">Unique, 1/1 Generated</h3>
+                                <p>Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus
+                                    mauris
+                                    auctor rhoncus. Malesuada nisl at mauris cursus lorem mattis arcu.</p>
+                            </div>
+
+                            <div class="cybox-info corner-box mb-4">
+                                <h3 class="text-white ff-chakra fw-bold mb-3">140+ Traits In 16 Categories</h3>
+                                <p>Ornare faucibus urna, netus ut. Ac vulputate ornare donec orci sed gravida senectus.
+                                    Felis
+                                    quis morbi vivamus est eget sapien magnis quis.</p>
+                            </div>
+
+                            <div class="cybox-info corner-box mb-5">
+                                <h3 class="text-white ff-chakra fw-bold mb-3">Usage Rights Included</h3>
+                                <p>Ac, bibendum duis gravida nullam. At amet nibh platea nibh interdum non, egestas
+                                    bibendum
+                                    iaculis. Etiam tristique ultricies tristique ullamcorper donec eget odio ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <!-- what is cybox section end -->
+
+    <!-- nfts art and collections, stage slider start -->
+    <section class="index-stage-slider pb-5">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-5">
+                        <h6 class="section-sub-heading text-secondary">NFT</h6>
+                        <h3 class="section-heading text-white">ARTS & COLLECTIBLES</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid g-0">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme pb-4 mb-2">
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img1.jpg" alt="img1.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Dose of Art</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img2.jpg" alt="img2.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">To The Moon</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img3.jpg" alt="img3.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Artful
+                                    Antlers</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img4.jpg" alt="img4.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Butterfly
+                                    Dust</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img5.jpg" alt="img5.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">
+                                    Dragons</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img6.jpg" alt="img6.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Crypto
+                                    Diamonds</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img7.jpg" alt="img7.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Nova
+                                    Auroras</a>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img1.jpg" alt="img1.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Dose of Art</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img2.jpg" alt="img2.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">To The Moon</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img3.jpg" alt="img3.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Artful
+                                    Antlers</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img4.jpg" alt="img4.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">Butterfly
+                                    Dust</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="stage-slider-item-box">
+                                <img src="./assets/images/stage-slider-images/img5.jpg" alt="img5.jpg"
+                                    class="img-fluid">
+                                <a href="#" class="ff-chakra fs-5 fw-bold text-uppercase d-inline-block">
+                                    Dragons</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- nfts art and collections, stage slider end -->
+
+    <!-- footer start -->
+    <footer class="footer bg-info position-relative">
+        <!-- vector elements -->
+        <div class="container">
+            <img src="./assets/images/elements/footer-element-1.png" alt="footer-element-1.png"
+                class="img-fluid position-absolute footer-element-1 top-0 d-none d-xl-block">
+            <img src="./assets/images/elements/footer-element-2.png" alt="footer-element-1.png"
+                class="img-fluid position-absolute footer-element-2 d-none d-xl-block">
+        </div>
+
+        <!-- main footer start -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- social icons and text -->
+                    <div class="col-12">
+                        <!-- social icons -->
+                        <div class="footer-social-m-icons d-flex justify-content-center mb-4">
+                            <ul class="list-unstyled d-flex">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!-- text -->
+                        <div class="text-center">
+                            <h2 class="text-white mb-4 ff-chakra fw-bold">Don’t Miss Out, Join Now For Early Access</h2>
+                            <p class="mb-5">Maecenas Sit Pretium, Cras In. In Quisque Sem Id Eget. In Vel Gravida Ut</p>
+                        </div>
+
+                    </div>
+
+                    <!-- footer subscribe us form start -->
+                    <div class="col-lg-7 col-xl-6 col-md-8">
+                        <form action="#" class="d-flex justify-content-center footer-subscription-form">
+                            <input type="email" name="#" id="#" placeholder="Enter Your Email Here...."
+                                class="form-control me-0 me-md-4 mb-4 mb-md-0" required>
+                            <button type="submit" class="secondary-btn-effect btn-effect">
+                                <span class="border-fade"></span>
+                                <span class="effect text-white fw-bold ff-chakra">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- footer copyright and other items nav start-->
+        <div class="footer-nav pt-3">
+            <div class="container">
+                <div class="footer-navbar">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 text-center text-lg-start">
+                            <a href="#" class="text-default">CYBOX 2022 - ALL Rights Reserved</a>
+                        </div>
+                        <div class="col-lg-7">
+                            <ul
+                                class="list-unstyled d-md-flex justify-content-lg-end justify-content-center text-center text-lg-start">
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Privacy Policy</a>
+                                </li>
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Cookies</a>
+                                </li>
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Terms & Conditions</a>
+                                </li>
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- all script files and cdns -->
+    <!-- bootstrap script files -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- aos animation script file -->
+    <script src="./node_modules/aos/src/js/aos.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- jQuery and cdn for navbar on scroll bg change -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/navbar-onscroll.js"></script>
+
+    <!-- slick carousel cdn -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- slick all scripts -->
+    <script src="./vendors/slick/slick/slick.min.js"></script>
+    <script src="./assets/js/slick-slider.js"></script>
+
+
+    <!-- owl carousel script  -->
+    <script src="./vendors/owlcarousel/src/js/owl.carousel.js"></script>
+    <script src="./vendors/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="./vendors/owlcarousel/owl-jquery/owl-jquery.js"></script>
+
+    <!-- countdown timing script -->
+    <script src="./assets/js/countdown-script.js"></script>
+
+    <!-- sidenav script -->
+    <script src="./assets/js/sidenav.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.lazy').slick({});
+        });
+    </script>
+
+</body>
+
+</html>

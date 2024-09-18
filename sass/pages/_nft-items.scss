@@ -1,0 +1,126 @@
+.nft-items-sec {
+    &.index-stage-slider {
+        .stage-slider-item-box {
+            transform: translateY(0);
+
+            &:hover {
+                transform: translateY(-8px);
+            }
+        }
+    }
+
+    .search-and-catagories {
+        border: 1px solid rgba($color: $white, $alpha: 0.2);
+        padding: 10px;
+
+        input {
+            background: transparent;
+            border: 0;
+            outline: 0;
+            width: calc(100% - 30px);
+
+            &:focus {
+
+                caret-color: $secondary;
+            }
+        }
+
+        button {
+            background: transparent;
+            border: 0;
+            outline: 0;
+        }
+
+        &:hover {
+            border-color: $secondary;
+        }
+
+        .dropdown {
+            width: 100%;
+
+            .dropdown-toggle {
+                width: 100%;
+                background: transparent;
+                border: 0;
+                text-align: start;
+                color: $gray-500;
+
+                &::after {
+                    position: absolute;
+                    right: 10px;
+                    top: 40%;
+                }
+            }
+
+            .dropdown-menu {
+                width: 100%;
+                background-color: $info;
+                border-radius: 0;
+                transform: translate(0px, 55px) !important;
+
+                li {
+                    .dropdown-item {
+                        color: $white;
+
+                        &:hover {
+                            background: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nft-item-details-sec {
+    .share-view-etc-options {
+
+        span,
+        button {
+            margin-right: 15px;
+            color: $white;
+            transition: all 0.3s linear;
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+            box-shadow: none;
+
+            &:hover {
+                color: $secondary;
+
+                i {
+                    color: $secondary;
+                }
+
+            }
+
+            i {
+                color: $white;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .list-product {
+        display: flex;
+        flex-wrap: wrap;
+
+        .box {
+            margin-bottom: 30px;
+
+            p {
+                margin-bottom: 5px;
+            }
+
+            .h-6 {
+                font-size: calc($fs-small + 0.5rem);
+                color: $white;
+                font-family: $ff-chakra;
+                font-weight: bold;
+            }
+        }
+    }
+}

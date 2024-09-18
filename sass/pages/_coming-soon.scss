@@ -1,0 +1,121 @@
+.coming-soon-page {
+
+    .coming-soon-main {
+        min-height: 100vh;
+        width: 100%;
+
+        .sub-heading {
+            letter-spacing: 10.5px;
+            margin-left: -15px;
+            line-height: 1.5;
+            font-size: calc($fs-small + 4px);
+
+            @include media-breakpoint-down(sm) {
+                letter-spacing: 7px;
+                font-size: calc($fs-small);
+                margin-left: 10px;
+            }
+        }
+
+        .heading-coming-soon {
+            letter-spacing: 25px;
+
+            @include media-breakpoint-down(sm) {
+                letter-spacing: 3px;
+            }
+        }
+
+        .countdown {
+            ul {
+                li {
+                    font-size: calc($fs-small + 4px);
+                    margin-right: 60px;
+                    line-height: 1.5;
+                    color: $white;
+                    font-family: "Urbanist", sans-serif;
+
+                    .count-item {
+                        height: 80px;
+                        width: 80px;
+                        line-height: 1.27;
+                        font-family: $ff-chakra;
+                        color: $white;
+                        font-weight: $font-weight-bold;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 10px;
+
+                        @include media-breakpoint-down(sm) {
+                            height: 60px;
+                            width: 60px;
+                        }
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        height: 60px;
+                        width: 60px;
+                        font-size: calc($fs-small - 2px);
+                    }
+                }
+            }
+        }
+
+        .newlletter-form {
+            max-width: 100%;
+
+            .form-items {
+                border: 2px solid $secondary;
+                padding: 5px;
+
+
+                .form-control {
+                    border: 0;
+                    font-size: $fs-small;
+
+                    @include media-breakpoint-down(sm) {
+                        border: 1px solid $secondary;
+                        margin-bottom: 15px
+                    }
+                }
+
+                button {
+                    min-width: 150px;
+                    min-height: 0;
+
+                    @include media-breakpoint-down(sm) {
+                        margin: 0 auto;
+                        width: 100%;
+                    }
+                }
+
+                @include media-breakpoint-down(sm) {
+                    flex-wrap: wrap;
+                    border: 0;
+                    margin: 50px 0 0 0;
+                }
+            }
+        }
+
+        .widget-social {
+            li {
+                margin-right: 40px;
+
+                a {
+                    svg {
+                        path {
+                            transition: all 0.3s ease;
+                            fill: $gray-500;
+
+                            &:hover {
+                                fill: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

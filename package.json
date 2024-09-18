@@ -1,0 +1,23 @@
+{
+  "name": "cybox-theme",
+  "version": "1.0.0",
+  "description": "A nft collection theme by uiux den",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass --watch sass/main.scss assets/css/style.css"
+  },
+  "keywords": [
+    "NFT",
+    "HTML",
+    "SASS",
+    "CSS"
+  ],
+  "author": "UIUX DEN",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.1",
+    "swiper": "^8.4.2"
+  }
+}

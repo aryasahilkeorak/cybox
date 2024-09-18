@@ -1,0 +1,226 @@
+.secondary-btn-effect,
+.primary-btn-effect {
+    min-height: 64px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    padding: 15px 32px;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    color: $white;
+    font-family: $ff-chakra;
+
+    @include media-breakpoint-down(xl){
+        min-height: 0px;
+        padding: 10px 25px;
+    }
+    @include media-breakpoint-down(sm){
+        min-height: 0px;
+        padding: 5px 20px;
+    }
+}
+
+.border-fade {
+    position: absolute;
+    transition: all 0.1s;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.effect {
+    display: block;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 2px;
+        height: 0;
+        position: absolute;
+        transition: all 0.2s linear;
+        background: $white;
+    }
+}
+
+// ----------------------------
+
+.secondary-btn-effect {
+    background: transparent;
+    border: 2px solid $secondary;
+
+    .effect {
+
+        &::before,
+        &::after {
+            background: $white;
+        }
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        transition: all 0.2s linear;
+        background: $white;
+    }
+
+    &:hover {
+        color: $white;
+        border: 2px solid transparent;
+
+        &::before,
+        &::after {
+            width: 100%;
+        }
+
+        .effect {
+
+            &::before,
+            &::after {
+                height: 100%;
+            }
+        }
+    }
+
+    &.btn-effect {
+        &::before {
+            left: 50%;
+            top: 0;
+            transition-duration: 0.3s;
+            z-index: 1;
+        }
+
+        &::after {
+            left: 50%;
+            bottom: 0;
+            transition-duration: 0.3s;
+            z-index: 1;
+        }
+
+        .effect {
+            &::before {
+                left: 0;
+                top: 50%;
+                transition-duration: 0.3s;
+            }
+
+            &::after {
+                right: 0;
+                top: 50%;
+                transition-duration: 0.3s;
+            }
+        }
+
+        &:hover {
+
+            &::after,
+            &::before {
+                left: 0;
+            }
+
+            .effect {
+
+                &::after,
+                &::before {
+                    top: 0;
+                }
+            }
+        }
+    }
+
+}
+
+.primary-btn-effect {
+    background: $secondary;
+    border: none;
+
+    .border-fade {
+        border: 2px solid $secondary;
+    }
+
+    .effect {
+
+        &::before,
+        &::after {
+            background: $white;
+        }
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        transition: all 0.2s linear;
+        background: $white;
+    }
+
+    &:hover {
+        color: $white;
+        background: transparent;
+
+        &::before,
+        &::after {
+            width: 100%;
+        }
+
+        .effect {
+
+            &::before,
+            &::after {
+                height: 100%;
+            }
+        }
+    }
+
+    &.btn-effect {
+        &::before {
+            left: 50%;
+            top: 0;
+            transition-duration: 0.3s;
+            z-index: 1;
+        }
+
+        &::after {
+            left: 50%;
+            bottom: 0;
+            transition-duration: 0.3s;
+            z-index: 1;
+        }
+
+        .effect {
+            &::before {
+                left: 0;
+                top: 50%;
+                transition-duration: 0.3s;
+            }
+
+            &::after {
+                right: 0;
+                top: 50%;
+                transition-duration: 0.3s;
+            }
+        }
+
+        &:hover {
+
+            &::after,
+            &::before {
+                left: 0;
+            }
+
+            .effect {
+
+                &::after,
+                &::before {
+                    top: 0;
+                }
+            }
+        }
+    }
+}

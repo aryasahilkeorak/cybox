@@ -1,0 +1,38 @@
+form {
+
+    .form-control {
+        padding: 0.7rem 0.9rem;
+        color: $gray-500;
+        font-size: $fs-small;
+        color: $gray-500;
+        background-color: transparent;
+        border: 1px solid rgba($color: $white, $alpha : 0.2);
+        border-radius: 0px;
+        transition: none;
+        outline: 0;
+        box-shadow: none;
+
+        &::placeholder {
+            color: $gray-500;
+        }
+
+        &:focus {
+            background: transparent;
+            color: $white;
+        }
+    }
+
+    textarea {
+        color: $white;
+
+        &::placeholder {
+            color: $white;
+        }
+    }
+
+    select {
+        option {
+            color: $black;
+        }
+    }
+}

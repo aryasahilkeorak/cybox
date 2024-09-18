@@ -1,0 +1,80 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+// custom variables
+@import '../sass/abstracts/variables';
+
+// reset css
+@import '../sass/base/reset';
+
+// bootstrap all sass files
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// aos animations
+@import '../node_modules/aos/src/sass/aos';
+
+// rest of all sass files
+
+// ======================= //
+
+// abstracts
+@import '../sass/abstracts/mixins';
+
+// base files
+@import '../sass/base/typography';
+
+// components
+@import '../sass/components/buttons';
+@import '../sass/components/effects';
+@import '../sass/components/borders';
+@import '../sass/components/checkbox';
+@import '../sass/components/form';
+@import '../sass/components/modal';
+@import '../sass/components/scroll-bar';
+@import '../sass/components/accordions';
+
+
+// layouts
+@import '../sass/layouts/navbar';
+@import '../sass/layouts/footer';
+
+// pages
+@import '../sass/pages/index';
+@import '../sass/pages/blog';
+@import '../sass/pages/contact';
+@import '../sass/pages/error-404';
+@import '../sass/pages/about';
+@import '../sass/pages/services';
+@import '../sass/pages/community';
+@import '../sass/pages/coming-soon';
+@import '../sass/pages/nft-items';
+
+// vendors
+@import '../node_modules/aos/src/sass/aos.scss';
+@import '../vendors/slick/slick/slick.scss';
+@import '../vendors/slick/slick/slick-theme.scss';
+@import '../vendors/owlcarousel/src/scss/owl.carousel.scss';
+@import '../vendors/owlcarousel/src/scss/owl.theme.default.scss';
+
+
+// custom container
+@include media-breakpoint-up(xl) {
+    .container {
+        max-width: 1440px;
+        width: 100%;
+    }
+}
+
+.py-large{
+    padding: 80px 0;
+    @include media-breakpoint-down(sm){
+        padding: 50px 0;
+    }
+}
+
+.py-medium{
+    padding: 40px 0;
+    @include media-breakpoint-down(sm){
+        padding: 25px 0;
+    }
+}

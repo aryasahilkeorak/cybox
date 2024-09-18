@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- site favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- bootstrap 5 and all custom css files -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font-awesome 6 cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <title>BLOG DETAIL</title>
+</head>
+
+<body>
+    <!-- Header start -->
+    <header>
+        <!-- navbar for xl> screens -->
+        <nav class="navbar navbar-fixed navbar-expand-xl navbar-light position-fixed w-100  start-0 end-0 py-3 d-none d-xl-block"
+            data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-out">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.php"><img src="./assets/images/brand-logo.png" alt="header-logo"
+                        class="img-fluid" /></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item  mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./index.php">Home 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="./index-2.php">Home 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="./index-3.php">Home 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">About</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./about.php">About 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="./about-2.php">About 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="./our-team.php">our team</a>
+                                    </li>
+                                    <li>
+                                        <a href="./coming-soon.php">coming soon</a>
+                                    </li>
+                                    <li>
+                                        <a href="./community.php">community</a>
+                                    </li>
+                                    <li>
+                                        <a href="./faq.php">faq</a>
+                                    </li>
+                                    <li>
+                                        <a href="./error-404.php">error 404</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">Road map</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./roadmap.php">Road map 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="./coming-soon.php">Road map 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">nft</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./nft-item.php">nft item</a>
+                                    </li>
+                                    <li>
+                                        <a href="./nft-item-details.php">nft item details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="#">Blog</a>
+                            <div class="nav-dropdown">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="./blog.php">Blog Grid</a>
+                                    </li>
+                                    <li>
+                                        <a href="./blog-detail.php">Blog details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mx-0 mx-lg-4 text-center text-xl-start">
+                            <a class="nav-link" href="./contact.php">Contact</a>
+                        </li>
+                </div>
+
+
+
+                <a href="#" class="secondary-btn-effect btn-effect d-none d-xl-block" data-bs-toggle="modal"
+                    data-bs-target="#gridSystemModal">
+                    <span class="border-fade"></span>
+                    <span class="effect text-white fw-bold ff-chakra">Join discord</span>
+                </a>
+
+            </div>
+        </nav>
+
+        <!-- navbar for xl< screens -->
+        <nav class="navbar-mobile position-fixed w-100  start-0 end-0 py-3 navbar-fixed-2 d-block d-xl-none">
+            <div class="container-fluid">
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <img src="./assets/images/brand-logo.png" alt="">
+                    </div>
+
+                    <div>
+                        <a href="#" class="secondary-btn-effect btn-effect " data-bs-toggle="modal"
+                            data-bs-target="#gridSystemModal">
+                            <span class="border-fade"></span>
+                            <span class="effect text-white fw-bold ff-chakra">Join</span>
+                        </a>
+
+                        <span style="font-size:30px; cursor:pointer; color: #fff;" onclick="openNav()">&#9776;</span>
+
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Home
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./index.php">Home 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./index-2.php">Home 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./index-3.php">Home 3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            About
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./about.php">About 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./about-2.php">About 2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./our-team.php">our team</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./coming-soon.php">coming soon</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./community.php">community</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./faq.php">faq</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./error-404.php">error 404</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Road Map
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./roadmap.php">Road map 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./coming-soon.php">Road map 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            NFT
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./nft-item.php">nft item</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./nft-item-details.php">nft item details</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            Blog
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="./blog.php">Blog Grid</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./blog-detail.php">Blog details</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button onclick="window.location.href = './contact.php';"
+                                            class="accordion-button collapsed" type="button">
+                                            Contact
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- blog hero banner start -->
+    <section class="blog-hero-banner">
+    </section>
+    <!-- blog hero banner end -->
+
+    <!-- blog main section start -->
+    <section class="blog-main-sec py-large">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+
+                    <article>
+                        <div class="pb-4 mb-4 border-bottom">
+                            <p class="bg-secondary px-3 py-2 text-white  d-inline-block">Nftartwork</p>
+                            <h1 class="fs-1 fw-bold ff-chakra text-white">Choosing Your NFT Avatar And How You Can Set
+                                It Up
+                                On
+                                Cybox</h1>
+
+                            <p class="mb-0">by <span class="text-white">Admin</span> | <span class="text-white">20 Jun
+                                    2022</span></p>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="mb-4">Users can now set and change avatars directly from their NFT collections and
+                                experience
+                                a brand new
+                                social representation. We look forward to having more users join us to experience the
+                                brand
+                                new
+                                digital representation of one’s social identity, discover the true meaning of the
+                                digital
+                                identity
+                                in Web 3.0</p>
+
+                            <p>Keep on reading to learn how to set up your NFT avatar and If we’ve piqued your interest
+                                in
+                                NFT
+                                avatars, virtual collectibles or just NFTs in general, you can check out the latest
+                                drops
+                                and
+                                collections on Binance NFT, the official NFT Marketplace of Binance.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <img src="./assets/images/blog/img-post.jpg" alt="img-post.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="mb-4">
+                            <h2 class="text-white fs-3 ff-chakra fw-bold">What’s The Connection Between The Metaverse
+                            </h2>
+                            <p>Here at Binance NFT, we believe that NFT avatars will be a new starting point for the
+                                user’s
+                                path
+                                to
+                                the metaverse.</p>
+
+                            <ul class="ps-4">
+                                <li>On top of making its way mainstream, NFT avatars are establishing themselves as the
+                                    new
+                                    starting
+                                    point for a user’s path to the metaverse.</li>
+
+                                <li>Users can now set their Binance profile picture into an NFT they own.</li>
+                                <li>In this article you will learn how to obtain top NFT avatars and how you can set it
+                                    up
+                                    on
+                                    Binance NFT.</li>
+                            </ul>
+
+                            <p>Since each NFT avatar project is a community in and of itself, using an NFT as your
+                                profile
+                                picture
+                                can help forge online connections and a sense of belonging within those spaces.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="text-white fs-3 ff-chakra fw-bold">How To Set Up Your Avatar And Nickname</h3>
+                            <p>
+                                Setting up your avatar and personalizing your nickname on Binance is quick and easy.
+                                Users
+                                can
+                                go to
+                                binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of
+                                you
+                                who
+                                own
+                                NFT assets, you can select the NFT you want to use from your collection as your avatar
+                                to
+                                personalize your profile. For users who do not own any NFT avatars, check out the NFT
+                                avatar
+                                collections page to get started.
+                            </p>
+                            <p>
+                                Alternatively, if you’re on nft.binance.com, go to User Center > Settings > Basic > Set
+                                Avatar
+                                and
+                                Nickname, and you’ll be redirected to the main site. Binance NFT Creators have the
+                                option of
+                                setting
+                                their Avatars on nft.binance.com. Once you set your new unique nickname, it will be
+                                standardized
+                                and
+                                used across the Binance ecosystem.
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4 class="text-white fs-3 ff-chakra fw-bold">NFT Avatar Generators</h4>
+                            <p>For those who like to DIY but don’t want to go through the whole creative process, online
+                                NFT
+                                Generators offer a fuss-free and easy way to quickly make a wide variety of new avatars
+                                using
+                                different art styles.</p>
+                            <p>You can find a range of NFT marketplaces where you can buy existing NFTs or list your own
+                                NFTs
+                                for
+                                sale.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="text-white fs-3 ff-chakra fw-bold">Avatar Monkeys</h5>
+                            <p>For those who just can’t get enough of cartoon primates and aping in, Avatar Monkeys will
+                                surely
+                                hit the spot. Check out this special collection of 100 unique monkey NFTs.</p>
+                        </div>
+                    </article>
+
+                    <div class="mb-4 tags-and-share-row">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <span class="fw-bold ff-chakra text-white fs-6 text-uppercase">TAGS :</span>
+                                    <a href="#">Analysis,</a>
+                                    <a href="#">Digital Art,</a>
+                                    <a href="">Collectible</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-md-end">
+                                <span class="fw-bold ff-chakra text-white fs-6 text-uppercase">SHARE :</span>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 blog-pagination border-top border-bottom py-4">
+                        <div class="row">
+                            <div class="col-lg-6 after">
+                                <button type="button">PREVIOUS</button>
+                                <p class="fw-bold ff-chakra fs-5">I Couldn’t Help But Splurge On These Epic Fall Finds
+                                </p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <button type="button">NEXT</button>
+                                <p class="fw-bold ff-chakra fs-5">I Couldn’t Help But Splurge On These Epic Fall Finds
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="latest-news-sec pb-0">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <div class="section-headings">
+                                <h6 class="section-sub-heading text-secondary">BLOGS</h6>
+                                <h2 class="section-heading text-white">RELATED NEWS</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6-col-lg-4 col-xl-3">
+                        <div class="news-container active mb-4">
+                            <img src="./assets/images/news/imgpost11.jpg" alt="imgpost11.jpg" class="img-fluid w-100">
+                            <div class="news-content-box">
+                                <p class="mb-0 text-white">20 Jun 2022</p>
+                                <a href="#" class="fs-4 text-white fw-bold ff-chakra">NFT Guide: Why They Matter For
+                                    Music?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6-col-lg-4 col-xl-3">
+                        <div class="news-container mb-4">
+                            <img src="./assets/images/news/imgpost12.jpg" alt="imgpost12.jpg" class="img-fluid w-100">
+                            <div class="news-content-box">
+                                <p class="mb-0 text-white">20 Jun 2022</p>
+                                <a href="#" class="fs-4 text-white fw-bold ff-chakra">NFT Guide: Why They Matter For
+                                    Music?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6-col-lg-4 col-xl-3">
+                        <div class="news-container mb-4">
+                            <img src="./assets/images/news/imgpost13.jpg" alt="imgpost13.jpg" class="img-fluid w-100">
+                            <div class="news-content-box">
+                                <p class="mb-0 text-white">20 Jun 2022</p>
+                                <a href="#" class="fs-4 text-white fw-bold ff-chakra">NFT Guide: Why They Matter For
+                                    Music?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6-col-lg-4 col-xl-3">
+                        <div class="news-container mb-4">
+                            <img src="./assets/images/news/imgpost14.jpg" alt="imgpost14.jpg" class="img-fluid w-100">
+                            <div class="news-content-box">
+                                <p class="mb-0 text-white">20 Jun 2022</p>
+                                <a href="#" class="fs-4 text-white fw-bold ff-chakra">NFT Guide: Why They Matter For
+                                    Music?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <footer class="footer bg-info position-relative">
+        <!-- vector elements -->
+        <div class="container">
+            <img src="./assets/images/elements/footer-element-1.png" alt="footer-element-1.png"
+                class="img-fluid position-absolute footer-element-1 top-0 d-none d-xl-block">
+            <img src="./assets/images/elements/footer-element-2.png" alt="footer-element-1.png"
+                class="img-fluid position-absolute footer-element-2 d-none d-xl-block">
+        </div>
+
+        <!-- main footer start -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- social icons and text -->
+                    <div class="col-12">
+                        <!-- social icons -->
+                        <div class="footer-social-m-icons d-flex justify-content-center mb-4">
+                            <ul class="list-unstyled d-flex">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!-- text -->
+                        <div class="text-center">
+                            <h2 class="text-white mb-4 ff-chakra fw-bold">Don’t Miss Out, Join Now For Early Access</h2>
+                            <p class="mb-5">Maecenas Sit Pretium, Cras In. In Quisque Sem Id Eget. In Vel Gravida Ut</p>
+                        </div>
+
+                    </div>
+
+                    <!-- footer subscribe us form start -->
+                    <div class="col-lg-7 col-xl-6 col-md-8">
+                        <form action="#" class="d-flex justify-content-center footer-subscription-form">
+                            <input type="email" name="#" id="#" placeholder="Enter Your Email Here...."
+                                class="form-control me-0 me-md-4 mb-4 mb-md-0" required>
+                            <button type="submit" class="secondary-btn-effect btn-effect">
+                                <span class="border-fade"></span>
+                                <span class="effect text-white fw-bold ff-chakra">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- footer copyright and other items nav start-->
+        <div class="footer-nav pt-3">
+            <div class="container">
+                <div class="footer-navbar">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 text-center text-lg-start">
+                            <a href="#" class="text-default">CYBOX 2022 - ALL Rights Reserved</a>
+                        </div>
+                        <div class="col-lg-7">
+                            <ul
+                                class="list-unstyled d-md-flex justify-content-lg-end justify-content-center text-center text-lg-start">
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Privacy Policy</a>
+                                </li>
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Cookies</a>
+                                </li>
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Terms & Conditions</a>
+                                </li>
+                                <li class="me-4">
+                                    <a href="#" class="text-default">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- all script files and cdns -->
+    <!-- bootstrap script files -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- aos animation script file -->
+    <script src="./node_modules/aos/src/js/aos.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- jQuery and cdn for navbar on scroll bg change -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/navbar-onscroll.js"></script>
+
+    <!-- slick carousel cdn -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- slick all scripts -->
+    <script src="./vendors/slick/slick/slick.min.js"></script>
+    <script src="./assets/js/slick-slider.js"></script>
+
+
+    <!-- owl carousel script  -->
+    <script src="./vendors/owlcarousel/src/js/owl.carousel.js"></script>
+    <script src="./vendors/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="./vendors/owlcarousel/owl-jquery/owl-jquery.js"></script>
+
+    <!-- countdown timing script -->
+    <script src="./assets/js/countdown-script.js"></script>
+
+    <!-- sidenav script -->
+    <script src="./assets/js/sidenav.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.lazy').slick({});
+        });
+    </script>
+
+</body>
+
+</html>

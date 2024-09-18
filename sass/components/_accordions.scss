@@ -1,0 +1,59 @@
+.accordions-sec {
+    .accordion {
+        --bs-accordion-border-width: 0px;
+        --bs-accordion-border-radius: 0rem;
+        --bs-accordion-inner-border-radius: 0;
+
+        .accordion-item {
+            margin-bottom: 20px;
+
+            .accordion-button {
+                background: transparent;
+
+                &:focus {
+                    z-index: 3;
+                    border-color: none;
+                    outline: 0;
+                    box-shadow: none;
+                }
+
+                &:focus-visible {
+                    border: 0;
+                    outline: 0;
+                }
+
+                &::after {
+                    background-image: url(../../assets/images/down-arrow.svg);
+                }
+            }
+
+            &:first-of-type {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+
+                .accordion-button {
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                }
+            }
+
+            &:last-of-type {
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+
+                .accordion-button {
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+
+            &:not(:first-of-type) {
+                border-top: 2px solid rgba($color: $secondary, $alpha: 0.5);
+
+                &:hover {
+                    border-color: $secondary;
+                }
+            }
+        }
+    }
+}
